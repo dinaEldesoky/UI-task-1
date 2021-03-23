@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  font-family: 'Della Respira', serif;
+}
+
+/* Grid System */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+
+
+  /* Navbar  */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  border: 2px solid gray;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+.topnav input[type=text] {
+  padding-left: 6px;
+  font-size: 10px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+
+  .search-container{
+      float: none;
+  }
+  .img{
+      height: 50% !important;
+  }
+}
+
+/* Background Image Overlaing texts */
+
+#backgroundImage {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/friends.jpg');
+    background-size:cover;
+    width:100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+.text1Overlay{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: white;
+    
+}
+.text2Overlay{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    
+}
+.text3Overlay{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    
+}
+.imgOverlay{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsOverlay{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.btn1{
+    border: 2px solid #0ACCC5;
+    color: #0ACCC5;
+    background-color: white;
+    border-radius: 5px;
+}
+.btn2{
+    border: 2px solid #0ACCC5;
+    color: white;
+    background-color: #0ACCC5;
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 10rem;
+    padding-left: 25px;
+}
+ .dot {
+    height: 200px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+    display: inline-block;
+  } 
+
+
+  /*  */
+.btn1Row{
+    border: 2px solid #0ACCC5;
+    color: white;
+    background-color: #0ACCC5;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn2Row{
+    justify-content: center;
+    display: flex;
+    border: 2px solid #0ACCC5;
+    color: #0ACCC5;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.validate{
+    display: flex;
+    border: 2px solid #1E0763;
+    width: 100px;
+    color: white;
+    background-color:#1E0763 ;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: small;
+    padding-left: 5px;
+}
+
+
+.validate30days{
+    border: 2px solid #1cabc4;
+    border-radius: 20px;
+    padding-left: 6px;
+    margin-left: 6px;
+    width: 45px;
+    background-color: #1cabc4;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.checkPriceBtn{
+    border: 2px solid #0ACCC5;
+    color: white;
+    background-color: #0ACCC5;
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 10rem;
+    padding-left: 60px;
+}
+
+.imageLayout{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/internet.jpg');
+    background-size:cover;
+    width:100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
+}
+
+.top-left{
+    color: white;
+    font-size: 25px;
+    padding-left: 70px;
+    
+}
+
+.exploreText{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.container-fluid{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom:20px ;
+    border: 1px solid #E9E9E9 ;
+    border-radius: 10px;
+    background-color:#E9E9E9 ;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.dataBtn{
+    border: 2px solid #1E0763;
+    color: white;
+    background-color: #1E0763;
+    width: 5rem;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.voiceBtn{
+    border: 2px solid #0ACCC5;
+    color: white;
+    background-color: #0ACCC5;
+    width: 5rem;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.circles{
+    border: 2px solid #1E0763;
+    color: white;
+    background-color: #1E0763;
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-top: 10px;
+    font-size: 8px;
+}
+.chip {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+  height: 50px;
+  font-size: 14px;
+  border: 2px solid #1E0763;
+  background-color: #f1f1f1;
+}
+
+.circles2{
+    border: 2px solid #0ACCC5;
+    color: white;
+    background-color: #0ACCC5;
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-top: 10px;
+    font-size: 8px;
+}
+.chip2 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+  height: 50px;
+  font-size: 14px;
+  border: 2px solid #0ACCC5;
+  background-color: #f1f1f1;
+}
+.image2Layout{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/mobile.jpg');
+    background-size:cover;
+    width:100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 60px;
+}
+
+.list{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-left: 70px;
+    margin-top: 20px;
+
+}
+.dots {
+    height: 18px;
+    width: 18px;
+    background-color: #0ACCC5;
+    border-radius: 50%;
+    display: inline-block;
+
+  }
+  .conditions{
+      display: flex;
+      margin-top: 20px;
+  }
+
+footer{
+    background-color: black;
+}  
+
+
+
+footer .row{
+    color: rgb(148, 140, 140);
+    padding-left: 60px;
+    padding-top: 20px;
+}  
